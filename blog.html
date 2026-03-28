@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Performances — Aditi Vasistha</title>
+  <meta name="description" content="Notable performances by Kathak artist Aditi Vasistha — from Kamani Auditorium to the President's House, and a Guinness World Record at Khajuraho." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#8B2635',
+            gold: '#B8933F',
+            'on-surface': '#1C1007',
+            surface: '#FDFAF6',
+            'surface-container-low': '#F9F0E7',
+            'surface-container': '#F5E8D8',
+            'on-surface-variant': '#5C4030',
+            'primary-fixed': '#F5D5BB',
+            'on-primary-fixed-variant': '#6B1A27',
+            'outline-variant': '#D9C4B0',
+          },
+          fontFamily: {
+            playfair: ['"Playfair Display"', 'serif'],
+            inter: ['Inter', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Inter', sans-serif; background-color: #FDFAF6; color: #1C1007; }
+    .fade-in { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    .perf-card:hover { transform: translateY(-4px); }
+    .perf-card { transition: transform 0.25s ease, box-shadow 0.25s ease; }
+    .perf-card:hover { box-shadow: 0 12px 40px rgba(139,38,53,0.12); }
+  </style>
+</head>
+<body class="bg-surface text-on-surface overflow-x-hidden">
+
+  <!-- NAVIGATION -->
+  <nav class="fixed top-0 left-0 right-0 z-50 h-20 bg-[#FDFAF6]/85 backdrop-blur-xl border-b border-[#F5E8D8]">
+    <div class="max-w-7xl mx-auto px-6 h-full flex items-center justify-between">
+      <a href="index.html" style="font-family:'Playfair Display',serif" class="font-bold text-xl tracking-tight text-on-surface">Aditi Vasistha</a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="index.html" class="text-sm font-medium text-on-surface-variant hover:text-primary transition-colors">Home</a>
+        <a href="story.html" class="text-sm font-medium text-on-surface-variant hover:text-primary transition-colors">About</a>
+        <a href="journey.html" class="text-sm font-medium text-on-surface-variant hover:text-primary transition-colors">Journey</a>
+        <a href="gallery.html" class="text-sm font-medium text-on-surface-variant hover:text-primary transition-colors">Gallery</a>
+        <a href="blog.html" class="text-sm font-medium text-primary border-b-2 border-primary pb-0.5">Performances</a>
+        <a href="mailto:Aditivasistha18@gmail.com" class="bg-primary text-white text-sm font-semibold px-5 py-2.5 rounded-xl hover:bg-on-primary-fixed-variant transition-colors">Contact Me</a>
+      </div>
+      <button id="mobile-menu-btn" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Toggle menu">
+        <span class="block w-6 h-0.5 bg-on-surface transition-all duration-300" id="bar1"></span>
+        <span class="block w-6 h-0.5 bg-on-surface transition-all duration-300" id="bar2"></span>
+        <span class="block w-6 h-0.5 bg-on-surface transition-all duration-300" id="bar3"></span>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-[#FDFAF6]/95 backdrop-blur-xl px-6 pb-6 border-b border-[#F5E8D8]">
+      <div class="flex flex-col gap-4 pt-4">
+        <a href="index.html" class="text-sm font-medium text-on-surface-variant">Home</a>
+        <a href="story.html" class="text-sm font-medium text-on-surface-variant">About</a>
+        <a href="journey.html" class="text-sm font-medium text-on-surface-variant">Journey</a>
+        <a href="gallery.html" class="text-sm font-medium text-on-surface-variant">Gallery</a>
+        <a href="blog.html" class="text-sm font-medium text-primary">Performances</a>
+        <a href="mailto:Aditivasistha18@gmail.com" class="bg-primary text-white text-sm font-semibold px-5 py-2.5 rounded-xl text-center">Contact Me</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="pt-40 pb-20 bg-surface">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="fade-in max-w-3xl">
+        <span class="text-gold uppercase tracking-widest text-xs font-semibold mb-4 block">On Stage</span>
+        <h1 style="font-family:'Playfair Display',serif" class="font-black text-5xl lg:text-6xl text-on-surface leading-tight mb-6">
+          Stages that<br/><span class="text-primary italic">defined a career.</span>
+        </h1>
+        <p class="text-on-surface-variant text-xl leading-relaxed max-w-2xl">
+          150+ performances. From intimate recitals to grand national stages — each one a story told through Kathak.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HERO IMAGE -->
+  <section class="bg-surface pb-0">
+    <div class="max-w-7xl mx-auto px-6 pb-0">
+      <div class="fade-in overflow-hidden rounded-[2rem] h-[45vh]">
+        <img src="assets/images/portfolio/p4_img2.png" alt="Aditi Vasistha on stage" class="w-full h-full object-cover object-center" />
+      </div>
+    </div>
+  </section>
+
+  <!-- HIGHLIGHT — GWR -->
+  <section class="bg-[#1C1007] py-16">
+    <div class="max-w-7xl mx-auto px-6 fade-in">
+      <div class="flex flex-col md:flex-row items-center gap-8">
+        <div class="w-16 h-16 rounded-2xl bg-gold/20 flex items-center justify-center flex-shrink-0">
+          <span class="material-symbols-outlined text-gold text-3xl">emoji_events</span>
+        </div>
+        <div>
+          <span class="text-gold text-xs font-semibold uppercase tracking-widest">2024 — Landmark Achievement</span>
+          <h2 style="font-family:'Playfair Display',serif" class="font-bold text-3xl text-white mt-1 mb-2">Guinness World Record · Khajuraho</h2>
+          <p class="text-white/60 text-sm max-w-2xl">At the ancient temples of Khajuraho — India's eternal monument to classical arts — Aditi participated in setting a Guinness World Record, etching her name into the legacy of Indian classical dance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PERFORMANCES GRID -->
+  <section class="bg-surface py-32">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="fade-in mb-12">
+        <div class="w-12 h-1 bg-gold rounded-full mb-6"></div>
+        <h2 style="font-family:'Playfair Display',serif" class="font-bold text-3xl text-on-surface">Notable Performances</h2>
+      </div>
+
+      <!-- 2024 -->
+      <div class="mb-16">
+        <h3 class="text-gold text-xs font-semibold uppercase tracking-widest mb-6 fade-in">2024</h3>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div class="fade-in perf-card bg-surface-container-low rounded-[1.5rem] p-6">
+            <span class="material-symbols-outlined text-primary mb-3 block">location_on</span>
+            <p style="font-family:'Playfair Display',serif" class="font-bold text-lg text-on-surface mb-1">Kamani Auditorium</p>
+            <p class="text-on-surface-variant text-sm">New Delhi, 2024</p>
+          </div>
+          <div class="fade-in perf-card bg-surface-container-low rounded-[1.5rem] p-6" style="transition-delay:0.06s">
+            <span class="material-symbols-outlined text-primary mb-3 block">performing_arts</span>
+            <p style="font-family:'Playfair Display',serif" class="font-bold text-lg text-on-surface mb-1">"Agney"</p>
+            <p class="text-on-surface-variant text-sm">India Habitat Centre, 2024</p>
+          </div>
+          <div class="fade-in perf-card bg-surface-container-low rounded-[1.5rem] p-6" style="transition-delay:0.12s">
+            <span class="material-symbols-outlined text-primary mb-3 block">menu_book</span>
+            <p style="font-family:'Playfair Display',serif" class="font-bold text-lg text-on-surface mb-1">International Book Fair</p>
+            <p class="text-on-surface-variant text-sm">New Delhi, 2024</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2023 -->
+      <div class="mb-16">
+        <h3 class="text-gold text-xs font-semibold uppercase tracking-widest mb-6 fade-in">2023</h3>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div class="fade-in perf-card bg-surface-container-low rounded-[1.5rem] p-6">
+            <span class="material-symbols-outlined text-primary mb-3 block">account_balance</span>
+            <p style="font-family:'Playfair Display',serif" class="font-bold text-lg text-on-surface mb-1">Dr BR Ambedkar International Centre</p>
+            <p class="text-on-surface-variant text-sm">New Delhi, 2023</p>
+          </div>
+          <div class="fade-in perf-card bg-surface-container-low rounded-[1.5rem] p-6" style="transition-delay:0.06s">
+            <span class="material-symbols-outlined text-primary mb-3 block">flag</span>
+            <p style="font-family:'Playfair Display',serif" class="font-bold text-lg text-on-surface mb-1">Azadi ka Amrit Mahotsav</p>
+            <p class="text-on-surface-variant text-sm">2023</p>
+          </div>
+          <div class="fade-in perf-card bg-surface-container-low rounded-[1.5rem] p-6" style="transition-delay:0.12s">
+            <span class="material-symbols-outlined text-primary mb-3 block">celebration</span>
+            <p style="font-family:'Playfair Display',serif" class="font-bold text-lg text-on-surface mb-1">Kathak Mahotsav</p>
+            <p class="text-on-surface-variant text-sm">Performers Group, 2023</p>
+          </div>
+          <div class="fade-in perf-card bg-surface-container-low rounded-[1.5rem] p-6" style="transition-delay:0.18s">
+            <span class="material-symbols-outlined text-primary mb-3 block">temple_buddhist</span>
+            <p style="font-family:'Playfair Display',serif" class="font-bold text-lg text-on-surface mb-1">Taj Mahotsav</p>
+            <p class="text-on-surface-variant text-sm">Agra, 2023</p>
+          </div>
+          <div class="fade-in perf-card bg-surface-container-low rounded-[1.5rem] p-6" style="transition-delay:0.24s">
+            <span class="material-symbols-outlined text-primary mb-3 block">palette</span>
+            <p style="font-family:'Playfair Display',serif" class="font-bold text-lg text-on-surface mb-1">IIC Dashavatar</p>
+            <p class="text-on-surface-variant text-sm">India International Centre, 2023</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2022 -->
+      <div class="mb-16">
+        <h3 class="text-gold text-xs font-semibold uppercase tracking-widest mb-6 fade-in">2022</h3>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div class="fade-in perf-card bg-surface-container-low rounded-[1.5rem] p-6">
+            <span class="material-symbols-outlined text-primary mb-3 block">location_city</span>
+            <p style="font-family:'Playfair Display',serif" class="font-bold text-lg text-on-surface mb-1">Jawahar Kala Kendra</p>
+            <p class="text-on-surface-variant text-sm">Jaipur, 2022</p>
+          </div>
+          <div class="fade-in perf-card bg-surface-container-low rounded-[1.5rem] p-6" style="transition-delay:0.06s">
+            <span class="material-symbols-outlined text-primary mb-3 block">stadium</span>
+            <p style="font-family:'Playfair Display',serif" class="font-bold text-lg text-on-surface mb-1">Siri Fort</p>
+            <p class="text-on-surface-variant text-sm">New Delhi, 2022</p>
+          </div>
+          <div class="fade-in perf-card bg-[#1C1007] rounded-[1.5rem] p-6" style="transition-delay:0.12s">
+            <span class="material-symbols-outlined text-gold mb-3 block">apartment</span>
+            <p style="font-family:'Playfair Display',serif" class="font-bold text-lg text-white mb-1">President's House</p>
+            <p class="text-white/50 text-sm">Rashtrapati Bhavan, New Delhi, 2022</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2020 -->
+      <div class="mb-16">
+        <h3 class="text-gold text-xs font-semibold uppercase tracking-widest mb-6 fade-in">2020</h3>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div class="fade-in perf-card bg-surface-container-low rounded-[1.5rem] p-6">
+            <span class="material-symbols-outlined text-primary mb-3 block">hotel</span>
+            <p style="font-family:'Playfair Display',serif" class="font-bold text-lg text-on-surface mb-1">Colours of India</p>
+            <p class="text-on-surface-variant text-sm">Le Méridien, 2020</p>
+          </div>
+          <div class="fade-in perf-card bg-surface-container-low rounded-[1.5rem] p-6" style="transition-delay:0.06s">
+            <span class="material-symbols-outlined text-primary mb-3 block">public</span>
+            <p style="font-family:'Playfair Display',serif" class="font-bold text-lg text-on-surface mb-1">Pravasi Bharti Kendra</p>
+            <p class="text-on-surface-variant text-sm">2020</p>
+          </div>
+          <div class="fade-in perf-card bg-surface-container-low rounded-[1.5rem] p-6" style="transition-delay:0.12s">
+            <span class="material-symbols-outlined text-primary mb-3 block">business_center</span>
+            <p style="font-family:'Playfair Display',serif" class="font-bold text-lg text-on-surface mb-1">National MSME Awards</p>
+            <p class="text-on-surface-variant text-sm">Group Performance, 2020</p>
+          </div>
+          <div class="fade-in perf-card bg-surface-container-low rounded-[1.5rem] p-6" style="transition-delay:0.18s">
+            <span class="material-symbols-outlined text-primary mb-3 block">art_track</span>
+            <p style="font-family:'Playfair Display',serif" class="font-bold text-lg text-on-surface mb-1">Indira Gandhi National Centre for Arts</p>
+            <p class="text-on-surface-variant text-sm">New Delhi, 2020</p>
+          </div>
+          <div class="fade-in perf-card bg-surface-container-low rounded-[1.5rem] p-6" style="transition-delay:0.24s">
+            <span class="material-symbols-outlined text-primary mb-3 block">celebration</span>
+            <p style="font-family:'Playfair Display',serif" class="font-bold text-lg text-on-surface mb-1">Youth Festival</p>
+            <p class="text-on-surface-variant text-sm">Rajasthan, 2020</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- STAGES ACROSS INDIA -->
+  <section class="bg-surface-container-low py-24">
+    <div class="max-w-7xl mx-auto px-6 fade-in">
+      <div class="w-12 h-1 bg-gold rounded-full mb-8"></div>
+      <h2 style="font-family:'Playfair Display',serif" class="font-bold text-3xl text-on-surface mb-8">Stages Across India</h2>
+      <div class="flex flex-wrap gap-3">
+        <!-- populated by JS below -->
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-surface border-t border-surface-container-low py-10">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+      <a href="index.html" style="font-family:'Playfair Display',serif" class="font-bold text-lg text-on-surface">Aditi Vasistha</a>
+      <p class="text-on-surface-variant text-sm">© 2025 Aditi Vasistha. Kathak Artist · Delhi.</p>
+      <div class="flex items-center gap-5">
+        <a href="https://www.instagram.com/aditi_vasistha" target="_blank" class="text-on-surface-variant hover:text-primary transition-colors text-sm">Instagram</a>
+        <a href="mailto:Aditivasistha18@gmail.com" class="text-on-surface-variant hover:text-primary transition-colors text-sm">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    const bar1 = document.getElementById('bar1'), bar2 = document.getElementById('bar2'), bar3 = document.getElementById('bar3');
+    let open = false;
+    btn.addEventListener('click', () => {
+      open = !open;
+      menu.classList.toggle('hidden', !open);
+      bar1.style.transform = open ? 'translateY(8px) rotate(45deg)' : '';
+      bar2.style.opacity = open ? '0' : '';
+      bar3.style.transform = open ? 'translateY(-8px) rotate(-45deg)' : '';
+    });
+    document.querySelectorAll("#mobile-menu a").forEach(link => {
+      link.addEventListener("click", () => { menu.classList.add("hidden"); open = false; bar1.style.transform = bar3.style.transform = ''; bar2.style.opacity = ''; });
+    });
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll(".fade-in").forEach(el => observer.observe(el));
+
+    // Render stage tags
+    const stages = [
+      'Kamani Auditorium', 'Siri Fort', 'India Habitat Centre', 'Triveni Kala Sangam',
+      'India International Centre', 'Dr BR Ambedkar International Centre', "President's House",
+      'Jawahar Kala Kendra, Jaipur', 'Kathak Kendra', 'Mukt Dhara Auditorium',
+      'Noida Stadium', 'Dainik Jagran', 'Jawahar Bhawan', 'Bharat Mandapam',
+      'Dwarka Convention Hall', 'Le Méridien', 'Pravasi Bharti Kendra',
+      'Indira Gandhi National Centre for Arts'
+    ];
+    const container = document.querySelector('.flex.flex-wrap.gap-3');
+    stages.forEach(s => {
+      const tag = document.createElement('span');
+      tag.className = 'bg-surface text-on-surface-variant text-sm px-4 py-2 rounded-full border border-outline-variant';
+      tag.textContent = s;
+      container.appendChild(tag);
+    });
+  </script>
+</body>
+</html>

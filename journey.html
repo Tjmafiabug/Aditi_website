@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Journey — Aditi Vasistha</title>
+  <meta name="description" content="The training journey of Aditi Vasistha — from her first steps in Kathak in 2011 to a Guinness World Record in 2024." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#8B2635',
+            gold: '#B8933F',
+            'on-surface': '#1C1007',
+            surface: '#FDFAF6',
+            'surface-container-low': '#F9F0E7',
+            'surface-container': '#F5E8D8',
+            'surface-container-high': '#F0DFC9',
+            'on-surface-variant': '#5C4030',
+            'primary-fixed': '#F5D5BB',
+            'on-primary-fixed-variant': '#6B1A27',
+            'outline-variant': '#D9C4B0',
+          },
+          fontFamily: {
+            playfair: ['"Playfair Display"', 'serif'],
+            inter: ['Inter', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Inter', sans-serif; background-color: #FDFAF6; color: #1C1007; }
+    .fade-in { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    .timeline-line { position: absolute; left: 19px; top: 0; bottom: 0; width: 2px; background: linear-gradient(to bottom, #B8933F, #8B2635, #B8933F); }
+  </style>
+</head>
+<body class="bg-surface text-on-surface overflow-x-hidden">
+
+  <!-- NAVIGATION -->
+  <nav class="fixed top-0 left-0 right-0 z-50 h-20 bg-[#FDFAF6]/85 backdrop-blur-xl border-b border-[#F5E8D8]">
+    <div class="max-w-7xl mx-auto px-6 h-full flex items-center justify-between">
+      <a href="index.html" style="font-family:'Playfair Display',serif" class="font-bold text-xl tracking-tight text-on-surface">Aditi Vasistha</a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="index.html" class="text-sm font-medium text-on-surface-variant hover:text-primary transition-colors">Home</a>
+        <a href="story.html" class="text-sm font-medium text-on-surface-variant hover:text-primary transition-colors">About</a>
+        <a href="journey.html" class="text-sm font-medium text-primary border-b-2 border-primary pb-0.5">Journey</a>
+        <a href="gallery.html" class="text-sm font-medium text-on-surface-variant hover:text-primary transition-colors">Gallery</a>
+        <a href="blog.html" class="text-sm font-medium text-on-surface-variant hover:text-primary transition-colors">Performances</a>
+        <a href="mailto:Aditivasistha18@gmail.com" class="bg-primary text-white text-sm font-semibold px-5 py-2.5 rounded-xl hover:bg-on-primary-fixed-variant transition-colors">Contact Me</a>
+      </div>
+      <button id="mobile-menu-btn" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Toggle menu">
+        <span class="block w-6 h-0.5 bg-on-surface transition-all duration-300" id="bar1"></span>
+        <span class="block w-6 h-0.5 bg-on-surface transition-all duration-300" id="bar2"></span>
+        <span class="block w-6 h-0.5 bg-on-surface transition-all duration-300" id="bar3"></span>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-[#FDFAF6]/95 backdrop-blur-xl px-6 pb-6 border-b border-[#F5E8D8]">
+      <div class="flex flex-col gap-4 pt-4">
+        <a href="index.html" class="text-sm font-medium text-on-surface-variant">Home</a>
+        <a href="story.html" class="text-sm font-medium text-on-surface-variant">About</a>
+        <a href="journey.html" class="text-sm font-medium text-primary">Journey</a>
+        <a href="gallery.html" class="text-sm font-medium text-on-surface-variant">Gallery</a>
+        <a href="blog.html" class="text-sm font-medium text-on-surface-variant">Performances</a>
+        <a href="mailto:Aditivasistha18@gmail.com" class="bg-primary text-white text-sm font-semibold px-5 py-2.5 rounded-xl text-center">Contact Me</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="pt-40 pb-20 bg-surface">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="fade-in max-w-3xl">
+        <span class="text-gold uppercase tracking-widest text-xs font-semibold mb-4 block">Training & Milestones</span>
+        <h1 style="font-family:'Playfair Display',serif" class="font-black text-5xl lg:text-6xl text-on-surface leading-tight mb-6">
+          The making of an<br/><span class="text-primary italic">artist.</span>
+        </h1>
+        <p class="text-on-surface-variant text-xl leading-relaxed max-w-2xl">
+          From the first steps in Kathak in 2011 to a Guinness World Record in 2024 — every chapter of Aditi's journey has been shaped by discipline, devotion, and extraordinary teachers.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="bg-surface pb-32">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="relative">
+        <div class="timeline-line hidden md:block"></div>
+
+        <!-- 2011 -->
+        <div class="fade-in flex gap-8 md:gap-12 mb-14">
+          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-gold flex items-center justify-center shadow-lg z-10">
+            <span class="material-symbols-outlined text-white text-sm">auto_stories</span>
+          </div>
+          <div class="bg-surface-container-low rounded-[1.5rem] p-8 flex-1 hover:shadow-md transition-shadow">
+            <span class="text-gold text-xs font-semibold uppercase tracking-widest">2011 — The Beginning</span>
+            <h3 style="font-family:'Playfair Display',serif" class="font-bold text-2xl text-on-surface mt-2 mb-3">Foundation in Kathak</h3>
+            <p class="text-on-surface-variant leading-relaxed text-sm">Began a five-year foundational course in Kathak under the guidance of <strong class="text-on-surface">Guru Rani Khanam</strong>. This formative period laid the technical and expressive bedrock of Aditi's artistry. Passed with First Division.</p>
+          </div>
+        </div>
+
+        <!-- 2015 -->
+        <div class="fade-in flex gap-8 md:gap-12 mb-14" style="transition-delay:0.08s">
+          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-primary flex items-center justify-center shadow-lg z-10">
+            <span class="material-symbols-outlined text-white text-sm">account_balance</span>
+          </div>
+          <div class="bg-surface-container-low rounded-[1.5rem] p-8 flex-1 hover:shadow-md transition-shadow">
+            <span class="text-gold text-xs font-semibold uppercase tracking-widest">2015 — National Institute</span>
+            <h3 style="font-family:'Playfair Display',serif" class="font-bold text-2xl text-on-surface mt-2 mb-3">Kathak Kendra, New Delhi</h3>
+            <p class="text-on-surface-variant leading-relaxed text-sm">Enrolled in the prestigious six-year Diploma Course at <strong class="text-on-surface">Kathak Kendra — the National Institute of Kathak</strong>, Ministry of Culture, Government of India. Completed in 2021 with First Division.</p>
+          </div>
+        </div>
+
+        <!-- 2017 -->
+        <div class="fade-in flex gap-8 md:gap-12 mb-14" style="transition-delay:0.16s">
+          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-gold flex items-center justify-center shadow-lg z-10">
+            <span class="material-symbols-outlined text-white text-sm">trending_up</span>
+          </div>
+          <div class="bg-surface-container-low rounded-[1.5rem] p-8 flex-1 hover:shadow-md transition-shadow">
+            <span class="text-gold text-xs font-semibold uppercase tracking-widest">2017 — Advanced Diploma</span>
+            <h3 style="font-family:'Playfair Display',serif" class="font-bold text-2xl text-on-surface mt-2 mb-3">Guru Subhash Bhattacharya</h3>
+            <p class="text-on-surface-variant leading-relaxed text-sm">Pursued a three-year Diploma in Kathak under the mentorship of <strong class="text-on-surface">Guru Subhash Bhattacharya</strong>, deepening her technical fluency and stage presence. Passed with First Division.</p>
+          </div>
+        </div>
+
+        <!-- NSD -->
+        <div class="fade-in flex gap-8 md:gap-12 mb-14" style="transition-delay:0.22s">
+          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-[#1C1007] flex items-center justify-center shadow-lg z-10">
+            <span class="material-symbols-outlined text-white text-sm">theater_comedy</span>
+          </div>
+          <div class="bg-surface-container-low rounded-[1.5rem] p-8 flex-1 hover:shadow-md transition-shadow">
+            <span class="text-gold text-xs font-semibold uppercase tracking-widest">Theatre</span>
+            <h3 style="font-family:'Playfair Display',serif" class="font-bold text-2xl text-on-surface mt-2 mb-3">National School of Drama</h3>
+            <p class="text-on-surface-variant leading-relaxed text-sm">Completed a one-year theatre certification from the <strong class="text-on-surface">National School of Drama, Delhi</strong> — adding a powerful dimension of abhinaya and dramatic expression to her dance vocabulary.</p>
+          </div>
+        </div>
+
+        <!-- 2020 -->
+        <div class="fade-in flex gap-8 md:gap-12 mb-14" style="transition-delay:0.28s">
+          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-primary flex items-center justify-center shadow-lg z-10">
+            <span class="material-symbols-outlined text-white text-sm">star</span>
+          </div>
+          <div class="bg-surface-container-low rounded-[1.5rem] p-8 flex-1 hover:shadow-md transition-shadow">
+            <span class="text-gold text-xs font-semibold uppercase tracking-widest">2020 — Honours Diploma</span>
+            <h3 style="font-family:'Playfair Display',serif" class="font-bold text-2xl text-on-surface mt-2 mb-3">Guru Malti Shyam</h3>
+            <p class="text-on-surface-variant leading-relaxed text-sm">Undertook a three-year Diploma with Honours under <strong class="text-on-surface">Guru Malti Shyam</strong> — the most rigorous chapter of formal training. Completed in 2023 with First Division. This period saw her emerge as a leading solo performer on national stages.</p>
+          </div>
+        </div>
+
+        <!-- Doordarshan -->
+        <div class="fade-in flex gap-8 md:gap-12 mb-14" style="transition-delay:0.34s">
+          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-gold flex items-center justify-center shadow-lg z-10">
+            <span class="material-symbols-outlined text-white text-sm">tv</span>
+          </div>
+          <div class="bg-surface-container-low rounded-[1.5rem] p-8 flex-1 hover:shadow-md transition-shadow">
+            <span class="text-gold text-xs font-semibold uppercase tracking-widest">Recognition</span>
+            <h3 style="font-family:'Playfair Display',serif" class="font-bold text-2xl text-on-surface mt-2 mb-3">Doordarshan Graded Artist</h3>
+            <p class="text-on-surface-variant leading-relaxed text-sm">Recognised as a <strong class="text-on-surface">Doordarshan Graded Artist</strong> — India's national broadcaster's mark of distinction for performing artists. A formal acknowledgment of excellence in classical arts.</p>
+          </div>
+        </div>
+
+        <!-- 2024 GWR -->
+        <div class="fade-in flex gap-8 md:gap-12 mb-14" style="transition-delay:0.4s">
+          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-primary flex items-center justify-center shadow-lg z-10 ring-4 ring-primary/20">
+            <span class="material-symbols-outlined text-white text-sm">emoji_events</span>
+          </div>
+          <div class="bg-[#1C1007] rounded-[1.5rem] p-8 flex-1 hover:shadow-xl transition-shadow">
+            <span class="text-gold text-xs font-semibold uppercase tracking-widest">2024 — World Record</span>
+            <h3 style="font-family:'Playfair Display',serif" class="font-bold text-2xl text-white mt-2 mb-3">Guinness World Record — Khajuraho</h3>
+            <p class="text-white/70 leading-relaxed text-sm">At Khajuraho — the ancient temple complex synonymous with India's classical arts heritage — Aditi participated in creating a <strong class="text-white">Guinness World Record</strong>, marking a defining moment in her career and in Indian classical dance.</p>
+          </div>
+        </div>
+
+        <!-- Ongoing -->
+        <div class="fade-in flex gap-8 md:gap-12" style="transition-delay:0.46s">
+          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-gold flex items-center justify-center shadow-lg z-10">
+            <span class="material-symbols-outlined text-white text-sm">music_note</span>
+          </div>
+          <div class="bg-surface-container-low rounded-[1.5rem] p-8 flex-1 hover:shadow-md transition-shadow">
+            <span class="text-gold text-xs font-semibold uppercase tracking-widest">Ongoing</span>
+            <h3 style="font-family:'Playfair Display',serif" class="font-bold text-2xl text-on-surface mt-2 mb-3">Prayag Sangeet Samiti</h3>
+            <p class="text-on-surface-variant leading-relaxed text-sm">Currently pursuing specialisations in <strong class="text-on-surface">classical vocals</strong> and <strong class="text-on-surface">tabla</strong> from Prayag Sangeet Samiti — continuing to deepen the musical foundation that informs every aspect of her artistry.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION NOTE -->
+  <section class="bg-surface-container-low py-20">
+    <div class="max-w-4xl mx-auto px-6 text-center fade-in">
+      <p class="text-on-surface-variant text-sm mb-2">Schooling</p>
+      <p style="font-family:'Playfair Display',serif" class="font-bold text-xl text-on-surface">Kendriya Vidyalaya, AGCR Colony, Delhi</p>
+      <p class="text-on-surface-variant text-sm mt-1">Student Council · Event Management · Dance Club · Drama Club</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-surface border-t border-surface-container-low py-10">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+      <a href="index.html" style="font-family:'Playfair Display',serif" class="font-bold text-lg text-on-surface">Aditi Vasistha</a>
+      <p class="text-on-surface-variant text-sm">© 2025 Aditi Vasistha. Kathak Artist · Delhi.</p>
+      <div class="flex items-center gap-5">
+        <a href="https://www.instagram.com/aditi_vasistha" target="_blank" class="text-on-surface-variant hover:text-primary transition-colors text-sm">Instagram</a>
+        <a href="mailto:Aditivasistha18@gmail.com" class="text-on-surface-variant hover:text-primary transition-colors text-sm">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    const bar1 = document.getElementById('bar1'), bar2 = document.getElementById('bar2'), bar3 = document.getElementById('bar3');
+    let open = false;
+    btn.addEventListener('click', () => {
+      open = !open;
+      menu.classList.toggle('hidden', !open);
+      bar1.style.transform = open ? 'translateY(8px) rotate(45deg)' : '';
+      bar2.style.opacity = open ? '0' : '';
+      bar3.style.transform = open ? 'translateY(-8px) rotate(-45deg)' : '';
+    });
+    document.querySelectorAll("#mobile-menu a").forEach(link => {
+      link.addEventListener("click", () => { menu.classList.add("hidden"); open = false; bar1.style.transform = bar3.style.transform = ''; bar2.style.opacity = ''; });
+    });
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.12 });
+    document.querySelectorAll(".fade-in").forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
