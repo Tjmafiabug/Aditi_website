@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-fixed": "#dbe1ff",
+              "surface-dim": "#d2d9f4",
+              "outline": "#737686",
+              "on-background": "#131b2e",
+              "on-surface-variant": "#434655",
+              "secondary": "#515f74",
+              "on-primary": "#ffffff",
+              "surface-container": "#eaedff",
+              "inverse-primary": "#b4c5ff",
+              "surface-variant": "#dae2fd",
+              "primary-fixed-dim": "#b4c5ff",
+              "on-secondary-fixed-variant": "#3a485b",
+              "inverse-on-surface": "#eef0ff",
+              "surface-container-low": "#f2f3ff",
+              "on-tertiary-fixed": "#07006c",
+              "surface-container-lowest": "#ffffff",
+              "tertiary": "#3e3fcc",
+              "tertiary-container": "#585be6",
+              "on-tertiary-fixed-variant": "#2f2ebe",
+              "on-primary-fixed": "#00174b",
+              "on-tertiary": "#ffffff",
+              "surface": "#faf8ff",
+              "primary": "#004ac6",
+              "tertiary-fixed-dim": "#c0c1ff",
+              "on-error-container": "#93000a",
+              "tertiary-fixed": "#e1e0ff",
+              "error-container": "#ffdad6",
+              "inverse-surface": "#283044",
+              "on-error": "#ffffff",
+              "secondary-fixed-dim": "#b9c7df",
+              "on-secondary-container": "#57657a",
+              "secondary-container": "#d5e3fc",
+              "primary-container": "#2563eb",
+              "surface-bright": "#faf8ff",
+              "outline-variant": "#c3c6d7",
+              "surface-container-highest": "#dae2fd",
+              "on-tertiary-container": "#f1eeff",
+              "on-primary-fixed-variant": "#003ea8",
+              "on-primary-container": "#eeefff",
+              "secondary-fixed": "#d5e3fc",
+              "on-surface": "#131b2e",
+              "surface-tint": "#0053db",
+              "error": "#ba1a1a",
+              "on-secondary-fixed": "#0d1c2e",
+              "on-secondary": "#ffffff",
+              "surface-container-high": "#e2e7ff",
+              "background": "#faf8ff"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-nav {
+        background-color: rgba(250, 248, 255, 0.8);
+        backdrop-filter: blur(24px);
+      }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-[#FAF8FF]/80 dark:bg-[#131B2E]/80 backdrop-blur-xl shadow-sm dark:shadow-none">
+<div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+<div class="text-xl font-extrabold text-[#131B2E] dark:text-[#FAF8FF] tracking-tighter font-['Manrope']">Modern Founder</div>
+<nav class="hidden md:flex items-center space-x-8">
+<a class="text-[#131B2E]/60 dark:text-[#FAF8FF]/60 hover:text-[#004AC6] transition-colors font-['Manrope'] font-bold tracking-tight" href="#">Home</a>
+<a class="text-[#131B2E]/60 dark:text-[#FAF8FF]/60 hover:text-[#004AC6] transition-colors font-['Manrope'] font-bold tracking-tight" href="#">Story</a>
+<a class="text-[#004AC6] dark:text-[#2563EB] border-b-2 border-[#004AC6] pb-1 font-['Manrope'] font-bold tracking-tight" href="#">Journey</a>
+<a class="text-[#131B2E]/60 dark:text-[#FAF8FF]/60 hover:text-[#004AC6] transition-colors font-['Manrope'] font-bold tracking-tight" href="#">Gallery</a>
+<a class="text-[#131B2E]/60 dark:text-[#FAF8FF]/60 hover:text-[#004AC6] transition-colors font-['Manrope'] font-bold tracking-tight" href="#">Blog</a>
+</nav>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-xl font-bold font-['Manrope'] tracking-tight active:scale-95 transition-transform hover:opacity-80 transition-all duration-300">Contact Me</button>
+</div>
+<div class="bg-[#F2F3FF] dark:bg-[#1E293B] h-px w-full absolute bottom-0"></div>
+</header>
+<main class="pt-32 pb-20 px-6 max-w-7xl mx-auto">
+<!-- Hero Section: Kinetic Minimalist -->
+<section class="mb-24 grid grid-cols-1 md:grid-cols-12 gap-8 items-end">
+<div class="md:col-span-8">
+<span class="text-primary font-label font-semibold tracking-widest text-xs uppercase mb-4 block">The Trajectory</span>
+<h1 class="text-5xl md:text-7xl font-headline font-extrabold text-on-surface tracking-tight leading-none mb-6">
+                    Building the <br/><span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary-container">Next Horizon.</span>
+</h1>
+<p class="text-lg text-on-surface-variant max-w-xl leading-relaxed">
+                    A chronicle of hyper-growth startups, strategic technical pivots, and the relentless pursuit of scalable innovation.
+                </p>
+</div>
+<div class="md:col-span-4 hidden md:flex justify-end">
+<div class="w-24 h-24 rounded-full border-4 border-primary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="rocket_launch">rocket_launch</span>
+</div>
+</div>
+</section>
+<!-- Timeline Section -->
+<section class="mb-32">
+<div class="flex items-center gap-4 mb-12">
+<h2 class="text-3xl font-headline font-bold text-on-surface">Timeline</h2>
+<div class="h-px flex-grow bg-surface-container"></div>
+</div>
+<div class="relative">
+<!-- Vertical Line -->
+<div class="absolute left-0 md:left-1/2 top-0 bottom-0 w-px bg-surface-container-highest -translate-x-1/2 hidden md:block"></div>
+<div class="space-y-16">
+<!-- Milestone 1 -->
+<div class="relative grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-24 items-start">
+<div class="md:text-right">
+<span class="inline-block px-3 py-1 bg-primary-fixed text-on-primary-fixed text-xs font-bold rounded-full mb-4">2022 — Present</span>
+<h3 class="text-2xl font-headline font-bold text-on-surface mb-2">Founder &amp; CEO</h3>
+<p class="text-primary font-medium mb-4">Nexus Core Technologies</p>
+<p class="text-on-surface-variant leading-relaxed">Scaling a distributed systems infrastructure startup from zero to series A. Managing a high-performance team of 20+ engineers across 3 time zones.</p>
+</div>
+<div class="relative pt-2">
+<div class="hidden md:block absolute -left-[52px] top-6 w-3 h-3 rounded-full bg-primary border-4 border-surface"></div>
+<img class="w-full h-48 object-cover rounded-xl shadow-sm grayscale hover:grayscale-0 transition-all duration-500" data-alt="Modern collaborative tech office space with neon lighting and minimalist workstations" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACOiJb6lu4FtR2gmxcA_SPpudRR6TaxWuYRb7jNtd5bB97Ga5XFUcBgf4HBNZLLMtnNih5zlXy1hRgvzab_Oh1uCmxv9Lw_ONhUNHafCAMCTrWI-NPhQD7x0N6iQ7JLh4gX1gwEKbqqhAcCW1iQjKj2_28JYTYdBL0K_xrRxiRZjq9FygCMU1M5W3NMk6gzfxJKehjz0ontBiIyTNhPK7kGRV8s9wniMBzZztT08idbkUoKyhI0p6l4q44RPTQzdlCpskmBscq0U4"/>
+</div>
+</div>
+<!-- Milestone 2 -->
+<div class="relative grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-24 items-start">
+<div class="order-2 md:order-1 relative pt-2">
+<div class="hidden md:block absolute -right-[52px] top-6 w-3 h-3 rounded-full bg-tertiary border-4 border-surface"></div>
+<img class="w-full h-48 object-cover rounded-xl shadow-sm grayscale hover:grayscale-0 transition-all duration-500" data-alt="Close up of a programmer working on complex code architecture in a dimly lit studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKYt3zvlewq2G-vu8qSgoI3xPHCxue42sh0Pr7mklNUQmvTEXbnCqDg0j0o9SnB6IkeJh3fbu86V8vRtAY8nhrS9cHKOj3sQc_X8O27p8vLdXjljyR2IEz__hnNWqRKSPGKRVN_iT9zGU1APi-a6F0o1lnFbkD-yi5IgIEOLBDZ72M48r4zvAgbAId61gLHGZVFtk916Fhzi2TafiLk0X28NZnixsjBUZ5h1z2OddN1NGFzTAplOmVaKfLz693LwFXdJ9GNqOoC0M"/>
+</div>
+<div class="order-1 md:order-2">
+<span class="inline-block px-3 py-1 bg-surface-container-highest text-on-surface-variant text-xs font-bold rounded-full mb-4">2019 — 2021</span>
+<h3 class="text-2xl font-headline font-bold text-on-surface mb-2">Lead Systems Architect</h3>
+<p class="text-tertiary font-medium mb-4">Vortex Fintech</p>
+<p class="text-on-surface-variant leading-relaxed">Orchestrated the migration of legacy payment processing to a cloud-native microservices architecture, reducing latency by 45% and operational costs by 30%.</p>
+</div>
+</div>
+<!-- Milestone 3 -->
+<div class="relative grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-24 items-start">
+<div class="md:text-right">
+<span class="inline-block px-3 py-1 bg-surface-container-highest text-on-surface-variant text-xs font-bold rounded-full mb-4">2017 — 2019</span>
+<h3 class="text-2xl font-headline font-bold text-on-surface mb-2">Full Stack Engineer</h3>
+<p class="text-primary font-medium mb-4">CloudScale AI</p>
+<p class="text-on-surface-variant leading-relaxed">Integrated machine learning models into user-facing dashboards. Optimized React components for high-density data visualization.</p>
+</div>
+<div class="relative pt-2">
+<div class="hidden md:block absolute -left-[52px] top-6 w-3 h-3 rounded-full bg-outline-variant border-4 border-surface"></div>
+<div class="bg-surface-container-low p-8 rounded-xl aspect-[16/6] flex items-center justify-center">
+<span class="material-symbols-outlined text-outline-variant text-6xl" data-icon="terminal">terminal</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Proficiency & Certifications Grid -->
+<section class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+<!-- Skills Bento -->
+<div class="lg:col-span-2">
+<div class="flex items-center gap-4 mb-10">
+<h2 class="text-3xl font-headline font-bold text-on-surface">Proficiency</h2>
+<div class="h-px flex-grow bg-surface-container"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="p-8 bg-surface-container-low rounded-xl">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary" data-icon="code">code</span>
+<h4 class="font-headline font-bold">Architecture &amp; Languages</h4>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-container-highest text-on-surface-variant text-sm font-medium rounded-lg">Rust</span>
+<span class="px-3 py-1 bg-surface-container-highest text-on-surface-variant text-sm font-medium rounded-lg">TypeScript</span>
+<span class="px-3 py-1 bg-surface-container-highest text-on-surface-variant text-sm font-medium rounded-lg">Go</span>
+<span class="px-3 py-1 bg-surface-container-highest text-on-surface-variant text-sm font-medium rounded-lg">Python</span>
+<span class="px-3 py-1 bg-primary text-on-primary text-sm font-medium rounded-lg">Kubernetes</span>
+<span class="px-3 py-1 bg-surface-container-highest text-on-surface-variant text-sm font-medium rounded-lg">GraphQL</span>
+</div>
+</div>
+<div class="p-8 bg-surface-container-low rounded-xl">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-tertiary" data-icon="strategy">strategy</span>
+<h4 class="font-headline font-bold">Leadership &amp; Strategy</h4>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-container-highest text-on-surface-variant text-sm font-medium rounded-lg">Venture Growth</span>
+<span class="px-3 py-1 bg-surface-container-highest text-on-surface-variant text-sm font-medium rounded-lg">Product Roadmap</span>
+<span class="px-3 py-1 bg-tertiary text-on-tertiary text-sm font-medium rounded-lg">Agile Scaling</span>
+<span class="px-3 py-1 bg-surface-container-highest text-on-surface-variant text-sm font-medium rounded-lg">Conflict Res</span>
+</div>
+</div>
+<div class="p-8 bg-on-background text-surface rounded-xl md:col-span-2">
+<div class="flex justify-between items-start">
+<div>
+<h4 class="font-headline font-bold text-xl mb-2">Growth Chip™ Alpha</h4>
+<p class="text-surface/70 text-sm max-w-sm mb-6">A proprietary framework developed for accelerating engineering velocity in pre-seed environments.</p>
+<button class="text-primary-fixed font-bold text-sm flex items-center gap-2">View Case Study <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span></button>
+</div>
+<span class="material-symbols-outlined text-5xl text-primary" data-icon="token" data-weight="fill" style="font-variation-settings: 'FILL' 1;">token</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Certifications -->
+<div>
+<div class="flex items-center gap-4 mb-10">
+<h2 class="text-3xl font-headline font-bold text-on-surface">Credentials</h2>
+<div class="h-px flex-grow bg-surface-container"></div>
+</div>
+<div class="space-y-4">
+<div class="p-6 border border-outline-variant/20 rounded-xl hover:bg-surface-container transition-colors group">
+<p class="text-xs text-on-surface-variant/60 font-bold mb-1">AWS CLOUD SERVICES</p>
+<h5 class="font-bold text-on-surface group-hover:text-primary transition-colors">Solutions Architect Professional</h5>
+<div class="flex justify-between items-center mt-4">
+<span class="text-xs text-on-surface-variant">ID: AWS-99420</span>
+<span class="material-symbols-outlined text-outline-variant" data-icon="verified">verified</span>
+</div>
+</div>
+<div class="p-6 border border-outline-variant/20 rounded-xl hover:bg-surface-container transition-colors group">
+<p class="text-xs text-on-surface-variant/60 font-bold mb-1">SCRUM ALLIANCE</p>
+<h5 class="font-bold text-on-surface group-hover:text-primary transition-colors">Certified Scrum Master (CSM)</h5>
+<div class="flex justify-between items-center mt-4">
+<span class="text-xs text-on-surface-variant">Issued: Jan 2021</span>
+<span class="material-symbols-outlined text-outline-variant" data-icon="verified">verified</span>
+</div>
+</div>
+<div class="p-6 border border-outline-variant/20 rounded-xl hover:bg-surface-container transition-colors group">
+<p class="text-xs text-on-surface-variant/60 font-bold mb-1">GOOGLE CLOUD</p>
+<h5 class="font-bold text-on-surface group-hover:text-primary transition-colors">Professional Data Engineer</h5>
+<div class="flex justify-between items-center mt-4">
+<span class="text-xs text-on-surface-variant">Expires: Dec 2025</span>
+<span class="material-symbols-outlined text-outline-variant" data-icon="verified">verified</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 border-t border-[#C3C6D7]/20 bg-[#FAF8FF] dark:bg-[#131B2E] font-['Inter'] text-sm uppercase tracking-widest">
+<div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="text-lg font-bold text-[#131B2E] dark:text-[#FAF8FF]">Modern Founder</div>
+<div class="text-[#131B2E]/50 dark:text-[#FAF8FF]/50 text-center md:text-left">© 2024 Modern Founder. Built for the disruption era.</div>
+<div class="flex gap-8">
+<a class="text-[#131B2E]/50 dark:text-[#FAF8FF]/50 hover:text-[#004AC6] dark:hover:text-[#2563EB] transition-colors opacity-100 hover:opacity-70" href="#">LinkedIn</a>
+<a class="text-[#131B2E]/50 dark:text-[#FAF8FF]/50 hover:text-[#004AC6] dark:hover:text-[#2563EB] transition-colors opacity-100 hover:opacity-70" href="#">GitHub</a>
+<a class="text-[#131B2E]/50 dark:text-[#FAF8FF]/50 hover:text-[#004AC6] dark:hover:text-[#2563EB] transition-colors opacity-100 hover:opacity-70" href="#">Read.cv</a>
+<a class="text-[#131B2E]/50 dark:text-[#FAF8FF]/50 hover:text-[#004AC6] dark:hover:text-[#2563EB] transition-colors opacity-100 hover:opacity-70" href="#">Twitter</a>
+</div>
+</div>
+</footer>
+</body></html>

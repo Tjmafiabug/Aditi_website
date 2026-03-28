@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface": "#faf8ff",
+              "surface-bright": "#faf8ff",
+              "on-tertiary-fixed-variant": "#2f2ebe",
+              "surface-tint": "#0053db",
+              "tertiary-fixed-dim": "#c0c1ff",
+              "surface-container": "#eaedff",
+              "on-primary-container": "#eeefff",
+              "on-secondary": "#ffffff",
+              "secondary-container": "#d5e3fc",
+              "on-tertiary-container": "#f1eeff",
+              "on-background": "#131b2e",
+              "inverse-surface": "#283044",
+              "on-surface": "#131b2e",
+              "inverse-primary": "#b4c5ff",
+              "surface-dim": "#d2d9f4",
+              "inverse-on-surface": "#eef0ff",
+              "on-primary": "#ffffff",
+              "surface-container-lowest": "#ffffff",
+              "primary-container": "#2563eb",
+              "on-primary-fixed": "#00174b",
+              "error-container": "#ffdad6",
+              "surface-container-high": "#e2e7ff",
+              "on-tertiary": "#ffffff",
+              "outline": "#737686",
+              "secondary": "#515f74",
+              "tertiary": "#3e3fcc",
+              "surface-container-low": "#f2f3ff",
+              "tertiary-fixed": "#e1e0ff",
+              "surface-variant": "#dae2fd",
+              "secondary-fixed": "#d5e3fc",
+              "primary": "#004ac6",
+              "on-secondary-fixed": "#0d1c2e",
+              "error": "#ba1a1a",
+              "on-primary-fixed-variant": "#003ea8",
+              "on-secondary-fixed-variant": "#3a485b",
+              "surface-container-highest": "#dae2fd",
+              "tertiary-container": "#585be6",
+              "on-secondary-container": "#57657a",
+              "on-error": "#ffffff",
+              "outline-variant": "#c3c6d7",
+              "on-error-container": "#93000a",
+              "background": "#faf8ff",
+              "secondary-fixed-dim": "#b9c7df",
+              "primary-fixed-dim": "#b4c5ff",
+              "primary-fixed": "#dbe1ff",
+              "on-surface-variant": "#434655",
+              "on-tertiary-fixed": "#07006c"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .font-headline { font-family: 'Manrope', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#FAF8FF]/80 dark:bg-[#131B2E]/80 backdrop-blur-xl shadow-sm dark:shadow-none font-['Manrope'] font-bold tracking-tight">
+<div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+<span class="text-xl font-extrabold text-[#131B2E] dark:text-[#FAF8FF] tracking-tighter">Modern Founder</span>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-[#131B2E]/60 dark:text-[#FAF8FF]/60 hover:text-[#004AC6] transition-colors hover:opacity-80 transition-all duration-300" href="#">Home</a>
+<a class="text-[#131B2E]/60 dark:text-[#FAF8FF]/60 hover:text-[#004AC6] transition-colors hover:opacity-80 transition-all duration-300" href="#">Story</a>
+<a class="text-[#131B2E]/60 dark:text-[#FAF8FF]/60 hover:text-[#004AC6] transition-colors hover:opacity-80 transition-all duration-300" href="#">Journey</a>
+<a class="text-[#131B2E]/60 dark:text-[#FAF8FF]/60 hover:text-[#004AC6] transition-colors hover:opacity-80 transition-all duration-300" href="#">Gallery</a>
+<a class="text-[#004AC6] dark:text-[#2563EB] border-b-2 border-[#004AC6] pb-1 hover:opacity-80 transition-all duration-300" href="#">Blog</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-xl font-bold tracking-tight hover:opacity-80 transition-all duration-300 active:scale-95 transition-transform">
+                Contact Me
+            </button>
+</div>
+<div class="bg-[#F2F3FF] dark:bg-[#1E293B] h-px w-full absolute bottom-0"></div>
+</nav>
+<main class="pt-32 pb-24 px-6 max-w-7xl mx-auto">
+<!-- Hero Section -->
+<header class="mb-20">
+<div class="inline-block bg-primary-fixed text-on-primary-fixed-variant px-3 py-1 rounded-full text-xs font-bold tracking-widest uppercase mb-4">
+                The Founder's Feed
+            </div>
+<h1 class="text-6xl md:text-8xl font-extrabold tracking-tighter mb-8 max-w-4xl leading-[0.95]">
+                Insights &amp; <span class="text-primary">Iterations.</span>
+</h1>
+<p class="text-xl text-on-surface-variant max-w-2xl font-medium leading-relaxed">
+                Documenting the messy, beautiful, and high-stakes journey of building in the startup ecosystem. No fluff, just the hard-won lessons from the trenches of 2024.
+            </p>
+</header>
+<!-- Categories/Tags -->
+<section class="mb-12 flex flex-wrap gap-3">
+<button class="px-5 py-2 rounded-full bg-surface-container-highest text-primary font-bold text-sm tracking-tight border border-transparent hover:border-primary/20 transition-all">All Posts</button>
+<button class="px-5 py-2 rounded-full bg-surface-container-low text-on-surface-variant font-medium text-sm tracking-tight hover:bg-surface-container-high transition-all">#Strategy</button>
+<button class="px-5 py-2 rounded-full bg-surface-container-low text-on-surface-variant font-medium text-sm tracking-tight hover:bg-surface-container-high transition-all">#Tech</button>
+<button class="px-5 py-2 rounded-full bg-surface-container-low text-on-surface-variant font-medium text-sm tracking-tight hover:bg-surface-container-high transition-all">#Culture</button>
+<button class="px-5 py-2 rounded-full bg-surface-container-low text-on-surface-variant font-medium text-sm tracking-tight hover:bg-surface-container-high transition-all">#Growth</button>
+<button class="px-5 py-2 rounded-full bg-surface-container-low text-on-surface-variant font-medium text-sm tracking-tight hover:bg-surface-container-high transition-all">#VentureCapital</button>
+</section>
+<!-- Featured Post: Bento Style -->
+<section class="mb-20">
+<div class="group relative bg-surface-container-lowest rounded-[2rem] overflow-hidden grid md:grid-cols-2 min-h-[500px] border border-outline-variant/10 shadow-sm transition-all hover:shadow-xl">
+<div class="relative h-full overflow-hidden">
+<img alt="Featured post cover" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Modern high-tech conference room with warm wood accents and large windows overlooking a sprawling urban cityscape at dusk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADgG0DdwS-UWUag4bCA-C7YKIqELi49f6RrgPpZagO78ahIlMAYam39z0iczW3LSFS96tNfPCNSZTA14QbLaLzOF6orwcdEtZGZdebox2u5xnAdOkWQpNdr-KTemHzdXRveCirG7ZVsOHabX4qWRVxvfctLuRDMmMAoRiDkppRI90Tv3x1cuq0rX5O6d_2LGXNPedzYJZIbqciuOGj6VRhNpCvM7YAFaqQCW9xciUy3h22zNUBeDrjh3kbGXCax6YE5CZE29SkXnw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+</div>
+<div class="p-8 md:p-16 flex flex-col justify-center bg-surface-container-lowest">
+<div class="flex items-center gap-4 mb-6">
+<span class="text-tertiary font-bold text-sm uppercase tracking-widest">Featured Insight</span>
+<span class="w-1 h-1 bg-outline-variant rounded-full"></span>
+<span class="text-on-surface-variant text-sm font-medium">March 14, 2024</span>
+</div>
+<h2 class="text-4xl md:text-5xl font-bold tracking-tight mb-6 leading-tight group-hover:text-primary transition-colors">
+                        Navigating Series A: Lessons from the Trenches
+                    </h2>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8">
+                        The shift from Seed to Series A isn't just about the money. It's about professionalizing the chaos. Here is the blueprint we used to close our latest round in record time.
+                    </p>
+<div class="flex items-center gap-4">
+<button class="flex items-center gap-2 text-primary font-bold text-lg hover:gap-4 transition-all">
+                            Read the Story <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Grid of Blog Posts -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Post 1 -->
+<article class="group bg-surface-container-low rounded-3xl p-4 transition-all hover:bg-surface-container-high">
+<div class="aspect-[4/3] rounded-2xl overflow-hidden mb-6">
+<img alt="AI in Fintech cover" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Abstract visualization of neural networks with glowing blue and purple light particles against a dark minimalist background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBP5djL0G3EeQ3kautrSt-wplBsVkwZu1HageKqLvxIywaTgo-87OlltxSMXV5_K0-rJkIUjflM4XuoCoM1BPhyoBLsYD7cGjH1lO3457-5zaC3wvkw3Y96eYoE2GdDEzG5_Yb2biGOUL7UeD1F0TZ4MfuFIOE-rAhF0b98Ok0QpkuNld6vOpyuKG_LT0UCQM3zSlxxEPUDYbmaB4t9_sXv123IRLbn3zbYcS3Q9IrLb0YO9LpDxnE5OfNEl2a6_T_LtQbesVRXrwg"/>
+</div>
+<div class="px-2">
+<div class="flex justify-between items-center mb-3">
+<span class="bg-tertiary-container text-on-tertiary-container px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Innovation</span>
+<span class="text-on-surface-variant text-xs font-medium">5 min read</span>
+</div>
+<h3 class="text-2xl font-bold tracking-tight mb-3 group-hover:text-primary transition-colors">The Future of AI in Fintech</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6 line-clamp-3">
+                        Why large language models are becoming the bedrock of personal finance management and risk assessment in 2024.
+                    </p>
+<div class="pt-4 border-t border-outline-variant/20 flex items-center justify-between">
+<span class="text-xs font-bold text-on-surface-variant">FEB 28, 2024</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">east</span>
+</div>
+</div>
+</article>
+<!-- Post 2 -->
+<article class="group bg-surface-container-low rounded-3xl p-4 transition-all hover:bg-surface-container-high">
+<div class="aspect-[4/3] rounded-2xl overflow-hidden mb-6">
+<img alt="Remote culture cover" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Overhead shot of a clean minimalist workspace with a laptop, a notebook, and a coffee cup on a light gray surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7klxqcws0mklZdrwPuQBcEDPzzaNdxfZUyKJJXC-u3lvxTBVNVoQt1XnFQKhGC1gztXdQ4uHfshEREJjbJeEQE5LoYNGMyLZWZeAbnUUBXy2lLo1swIn0QHCYmX2CZ72Xm2ezxoCG06dMzfLBRIWS37z9H6JyzaAg5VygaCvNwZYv2ZiBfyQACHoB7fhlalhT9ON-9pSnszI914tbrd2Mk0vIOiTUvtV_wDwRUSuCyerhjEGpSUEBEDIhmC57vu9Uemq4B4M_14w"/>
+</div>
+<div class="px-2">
+<div class="flex justify-between items-center mb-3">
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Culture</span>
+<span class="text-on-surface-variant text-xs font-medium">8 min read</span>
+</div>
+<h3 class="text-2xl font-bold tracking-tight mb-3 group-hover:text-primary transition-colors">Building Culture in Remote Teams</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6 line-clamp-3">
+                        Culture isn't a ping pong table. It's the silent rules of how work gets done when no one is watching.
+                    </p>
+<div class="pt-4 border-t border-outline-variant/20 flex items-center justify-between">
+<span class="text-xs font-bold text-on-surface-variant">FEB 15, 2024</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">east</span>
+</div>
+</div>
+</article>
+<!-- Post 3 -->
+<article class="group bg-surface-container-low rounded-3xl p-4 transition-all hover:bg-surface-container-high">
+<div class="aspect-[4/3] rounded-2xl overflow-hidden mb-6">
+<img alt="MVP mindset cover" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Conceptual image of geometric blueprints and wireframes on a digital screen with professional blue overlays" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAre7DSRIYx4WRRVFB2FrCNWXOT_hkvatyt2LCuc-DOP4Kb4CGaTfiuz3EcPyi_DTw52cM5EHpMp231zZfXPZkJZ8TWbChriPUxfQ0gDRSAz0jJGZzA_uukEsrqcD1LkppV5grQZCEhp5ecFirXLmHjfdJDAnVYDfRkS8Ocd1NXZmP6TUHzWtUkrXb4rMdd_tUnImDHWxwCVd4C-IfDxy8E1VgfXJHZ_rB2XOzReCNAhDz8OXRjTnEQLCcY_6mUHSpkI_SW8tXG8Uc"/>
+</div>
+<div class="px-2">
+<div class="flex justify-between items-center mb-3">
+<span class="bg-primary-fixed text-on-primary-fixed-variant px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Strategy</span>
+<span class="text-on-surface-variant text-xs font-medium">4 min read</span>
+</div>
+<h3 class="text-2xl font-bold tracking-tight mb-3 group-hover:text-primary transition-colors">The MVP Mindset</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6 line-clamp-3">
+                        How to stop over-engineering and start solving real problems for real customers with the minimum viable effort.
+                    </p>
+<div class="pt-4 border-t border-outline-variant/20 flex items-center justify-between">
+<span class="text-xs font-bold text-on-surface-variant">JAN 22, 2024</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">east</span>
+</div>
+</div>
+</article>
+</section>
+<!-- Newsletter Signup: Signature Section -->
+<section class="mt-32">
+<div class="bg-on-background text-on-primary p-8 md:p-20 rounded-[2.5rem] relative overflow-hidden flex flex-col md:flex-row items-center gap-12">
+<!-- Background decoration -->
+<div class="absolute -top-24 -right-24 w-96 h-96 bg-primary/20 blur-[120px] rounded-full"></div>
+<div class="absolute -bottom-24 -left-24 w-64 h-64 bg-tertiary/20 blur-[100px] rounded-full"></div>
+<div class="flex-1 relative z-10">
+<h2 class="text-4xl md:text-5xl font-extrabold tracking-tighter mb-4">Join the Journey.</h2>
+<p class="text-slate-400 text-lg font-medium">
+                        Receive monthly deep-dives on startup strategy, tech architecture, and founder psychology. No spam, just substance.
+                    </p>
+</div>
+<div class="w-full md:w-auto flex flex-col sm:flex-row gap-4 relative z-10">
+<input class="bg-slate-900 border border-slate-800 rounded-xl px-6 py-4 text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-primary min-w-[300px] transition-all" placeholder="Enter your email address" type="email"/>
+<button class="bg-primary text-white font-bold px-8 py-4 rounded-xl hover:opacity-90 active:scale-95 transition-all whitespace-nowrap">
+                        Get Updates
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950">
+<div class="flex flex-col md:flex-row justify-between items-center py-12 px-8 max-w-7xl mx-auto gap-6">
+<div class="flex flex-col items-center md:items-start gap-2">
+<span class="text-lg font-bold text-slate-900 dark:text-slate-50">Founder's Voice</span>
+<span class="font-['Manrope'] text-sm uppercase tracking-widest text-slate-500 dark:text-slate-500">© 2024 The Modern Founder. Built for the disruption era.</span>
+</div>
+<div class="flex gap-8">
+<a class="font-['Manrope'] text-sm uppercase tracking-widest text-slate-500 dark:text-slate-500 hover:text-blue-600 dark:hover:text-blue-400 transition-colors" href="#">Twitter</a>
+<a class="font-['Manrope'] text-sm uppercase tracking-widest text-slate-500 dark:text-slate-500 hover:text-blue-600 dark:hover:text-blue-400 transition-colors" href="#">LinkedIn</a>
+<a class="font-['Manrope'] text-sm uppercase tracking-widest text-slate-500 dark:text-slate-500 hover:text-blue-600 dark:hover:text-blue-400 transition-colors" href="#">Substack</a>
+<a class="font-['Manrope'] text-sm uppercase tracking-widest text-slate-500 dark:text-slate-500 hover:text-blue-600 dark:hover:text-blue-400 transition-colors" href="#">GitHub</a>
+</div>
+</div>
+</footer>
+</body></html>
