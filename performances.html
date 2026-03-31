@@ -31,28 +31,18 @@
             playfair: ['"Playfair Display"', 'serif'],
             inter: ['Inter', 'sans-serif'],
           },
-          borderRadius: {
-            '2rem': '2rem',
-            '2.5rem': '2.5rem',
-          },
-          boxShadow: {
-            'luxury': '0 20px 40px rgba(139,38,53,0.12)',
-            'luxury-hover': '0 30px 60px rgba(139,38,53,0.18)',
-          }
         }
       }
     }
   </script>
   <style>
-    body { font-family: 'Inter', sans-serif; background-color: #FDFAF6; color: #1C1007; -webkit-font-smoothing: antialiased; }
-    h1, h2, h3 { line-height: 1.1; letter-spacing: -0.02em; }
-    p { line-height: 1.6; }
-    .fade-in { opacity: 0; transform: translateY(24px); transition: opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1), transform 0.8s cubic-bezier(0.25, 1, 0.5, 1); }
+    body { font-family: 'Inter', sans-serif; background-color: #FDFAF6; color: #1C1007; }
+    .fade-in { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
     .fade-in.visible { opacity: 1; transform: translateY(0); }
     .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
-    .perf-card tilt-card:hover { transform: translateY(-4px); }
-    .perf-card tilt-card { transition: transform 0.25s ease, box-shadow 0.25s ease; }
-    .perf-card tilt-card:hover { box-shadow: 0 12px 40px rgba(139,38,53,0.12); }
+    .perf-card:hover { transform: translateY(-4px); }
+    .perf-card { transition: transform 0.25s ease, box-shadow 0.25s ease; }
+    .perf-card:hover { box-shadow: 0 12px 40px rgba(139,38,53,0.12); }
   </style>
 </head>
 <body class="bg-surface text-on-surface overflow-x-hidden">
@@ -91,8 +81,8 @@
   <section class="pt-40 pb-20 bg-surface">
     <div class="max-w-7xl mx-auto px-6">
       <div class="fade-in max-w-3xl">
-        <span class="text-gold uppercase tracking-[0.15em] text-[10px] font-bold mb-4 block">Kathak Portfolio</span>
-        <h1 style="font-family:'Playfair Display',serif" class="font-black text-5xl lg:text-7xl text-on-surface leading-tight mb-6">
+        <span class="text-gold uppercase tracking-widest text-xs font-semibold mb-4 block">On Stage</span>
+        <h1 style="font-family:'Playfair Display',serif" class="font-black text-5xl lg:text-6xl text-on-surface leading-tight mb-6">
           Stages that<br/><span class="text-primary italic">defined a career.</span>
         </h1>
         <p class="text-on-surface-variant text-xl leading-relaxed max-w-2xl">
@@ -140,17 +130,17 @@
       <div class="mb-16">
         <h3 class="text-gold text-xs font-semibold uppercase tracking-widest mb-6 fade-in">2024</h3>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <div class="fade-in perf-card tilt-card bg-surface-container-low rounded-[1.5rem] p-6">
+          <div class="fade-in perf-card bg-surface-container-low rounded-[1.5rem] p-6">
             <span class="material-symbols-outlined text-primary mb-3 block">location_on</span>
             <p style="font-family:'Playfair Display',serif" class="font-bold text-lg text-on-surface mb-1">Kamani Auditorium</p>
             <p class="text-on-surface-variant text-sm">New Delhi, 2024</p>
           </div>
-          <div class="fade-in perf-card tilt-card bg-surface-container-low rounded-[1.5rem] p-6" style="transition-delay:0.06s">
+          <div class="fade-in perf-card bg-surface-container-low rounded-[1.5rem] p-6" style="transition-delay:0.06s">
 
             <p style="font-family:'Playfair Display',serif" class="font-bold text-lg text-on-surface mb-1">"Agney"</p>
             <p class="text-on-surface-variant text-sm">India Habitat Centre, 2024</p>
           </div>
-          <div class="fade-in perf-card tilt-card bg-surface-container-low rounded-[1.5rem] p-6" style="transition-delay:0.12s">
+          <div class="fade-in perf-card bg-surface-container-low rounded-[1.5rem] p-6" style="transition-delay:0.12s">
             <span class="material-symbols-outlined text-primary mb-3 block">menu_book</span>
             <p style="font-family:'Playfair Display',serif" class="font-bold text-lg text-on-surface mb-1">International Book Fair</p>
             <p class="text-on-surface-variant text-sm">New Delhi, 2024</p>
@@ -162,27 +152,27 @@
       <div class="mb-16">
         <h3 class="text-gold text-xs font-semibold uppercase tracking-widest mb-6 fade-in">2023</h3>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <div class="fade-in perf-card tilt-card bg-surface-container-low rounded-[1.5rem] p-6">
+          <div class="fade-in perf-card bg-surface-container-low rounded-[1.5rem] p-6">
             <span class="material-symbols-outlined text-primary mb-3 block">account_balance</span>
             <p style="font-family:'Playfair Display',serif" class="font-bold text-lg text-on-surface mb-1">Dr BR Ambedkar International Centre</p>
             <p class="text-on-surface-variant text-sm">New Delhi, 2023</p>
           </div>
-          <div class="fade-in perf-card tilt-card bg-surface-container-low rounded-[1.5rem] p-6" style="transition-delay:0.06s">
+          <div class="fade-in perf-card bg-surface-container-low rounded-[1.5rem] p-6" style="transition-delay:0.06s">
             <span class="material-symbols-outlined text-primary mb-3 block">flag</span>
             <p style="font-family:'Playfair Display',serif" class="font-bold text-lg text-on-surface mb-1">Azadi ka Amrit Mahotsav</p>
             <p class="text-on-surface-variant text-sm">2023</p>
           </div>
-          <div class="fade-in perf-card tilt-card bg-surface-container-low rounded-[1.5rem] p-6" style="transition-delay:0.12s">
+          <div class="fade-in perf-card bg-surface-container-low rounded-[1.5rem] p-6" style="transition-delay:0.12s">
             <span class="material-symbols-outlined text-primary mb-3 block">celebration</span>
             <p style="font-family:'Playfair Display',serif" class="font-bold text-lg text-on-surface mb-1">Kathak Mahotsav</p>
             <p class="text-on-surface-variant text-sm">Performers Group, 2023</p>
           </div>
-          <div class="fade-in perf-card tilt-card bg-surface-container-low rounded-[1.5rem] p-6" style="transition-delay:0.18s">
+          <div class="fade-in perf-card bg-surface-container-low rounded-[1.5rem] p-6" style="transition-delay:0.18s">
             <span class="material-symbols-outlined text-primary mb-3 block">temple_buddhist</span>
             <p style="font-family:'Playfair Display',serif" class="font-bold text-lg text-on-surface mb-1">Taj Mahotsav</p>
             <p class="text-on-surface-variant text-sm">Agra, 2023</p>
           </div>
-          <div class="fade-in perf-card tilt-card bg-surface-container-low rounded-[1.5rem] p-6" style="transition-delay:0.24s">
+          <div class="fade-in perf-card bg-surface-container-low rounded-[1.5rem] p-6" style="transition-delay:0.24s">
             <span class="material-symbols-outlined text-primary mb-3 block">palette</span>
             <p style="font-family:'Playfair Display',serif" class="font-bold text-lg text-on-surface mb-1">IIC Dashavatar</p>
             <p class="text-on-surface-variant text-sm">India International Centre, 2023</p>
@@ -194,17 +184,17 @@
       <div class="mb-16">
         <h3 class="text-gold text-xs font-semibold uppercase tracking-widest mb-6 fade-in">2022</h3>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <div class="fade-in perf-card tilt-card bg-surface-container-low rounded-[1.5rem] p-6">
+          <div class="fade-in perf-card bg-surface-container-low rounded-[1.5rem] p-6">
             <span class="material-symbols-outlined text-primary mb-3 block">location_city</span>
             <p style="font-family:'Playfair Display',serif" class="font-bold text-lg text-on-surface mb-1">Jawahar Kala Kendra</p>
             <p class="text-on-surface-variant text-sm">Jaipur, 2022</p>
           </div>
-          <div class="fade-in perf-card tilt-card bg-surface-container-low rounded-[1.5rem] p-6" style="transition-delay:0.06s">
+          <div class="fade-in perf-card bg-surface-container-low rounded-[1.5rem] p-6" style="transition-delay:0.06s">
             <span class="material-symbols-outlined text-primary mb-3 block">stadium</span>
             <p style="font-family:'Playfair Display',serif" class="font-bold text-lg text-on-surface mb-1">Siri Fort</p>
             <p class="text-on-surface-variant text-sm">New Delhi, 2022</p>
           </div>
-          <div class="fade-in perf-card tilt-card bg-[#1C1007] rounded-[1.5rem] p-6" style="transition-delay:0.12s">
+          <div class="fade-in perf-card bg-[#1C1007] rounded-[1.5rem] p-6" style="transition-delay:0.12s">
             <span class="material-symbols-outlined text-gold mb-3 block">apartment</span>
             <p style="font-family:'Playfair Display',serif" class="font-bold text-lg text-white mb-1">President's House</p>
             <p class="text-white/50 text-sm">Rashtrapati Bhavan, New Delhi, 2022</p>
@@ -216,27 +206,27 @@
       <div class="mb-16">
         <h3 class="text-gold text-xs font-semibold uppercase tracking-widest mb-6 fade-in">2020</h3>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <div class="fade-in perf-card tilt-card bg-surface-container-low rounded-[1.5rem] p-6">
+          <div class="fade-in perf-card bg-surface-container-low rounded-[1.5rem] p-6">
             <span class="material-symbols-outlined text-primary mb-3 block">hotel</span>
             <p style="font-family:'Playfair Display',serif" class="font-bold text-lg text-on-surface mb-1">Colours of India</p>
             <p class="text-on-surface-variant text-sm">Le Méridien, 2020</p>
           </div>
-          <div class="fade-in perf-card tilt-card bg-surface-container-low rounded-[1.5rem] p-6" style="transition-delay:0.06s">
+          <div class="fade-in perf-card bg-surface-container-low rounded-[1.5rem] p-6" style="transition-delay:0.06s">
             <span class="material-symbols-outlined text-primary mb-3 block">public</span>
             <p style="font-family:'Playfair Display',serif" class="font-bold text-lg text-on-surface mb-1">Pravasi Bharti Kendra</p>
             <p class="text-on-surface-variant text-sm">2020</p>
           </div>
-          <div class="fade-in perf-card tilt-card bg-surface-container-low rounded-[1.5rem] p-6" style="transition-delay:0.12s">
+          <div class="fade-in perf-card bg-surface-container-low rounded-[1.5rem] p-6" style="transition-delay:0.12s">
             <span class="material-symbols-outlined text-primary mb-3 block">business_center</span>
             <p style="font-family:'Playfair Display',serif" class="font-bold text-lg text-on-surface mb-1">National MSME Awards</p>
             <p class="text-on-surface-variant text-sm">Group Performance, 2020</p>
           </div>
-          <div class="fade-in perf-card tilt-card bg-surface-container-low rounded-[1.5rem] p-6" style="transition-delay:0.18s">
+          <div class="fade-in perf-card bg-surface-container-low rounded-[1.5rem] p-6" style="transition-delay:0.18s">
             <span class="material-symbols-outlined text-primary mb-3 block">art_track</span>
             <p style="font-family:'Playfair Display',serif" class="font-bold text-lg text-on-surface mb-1">Indira Gandhi National Centre for Arts</p>
             <p class="text-on-surface-variant text-sm">New Delhi, 2020</p>
           </div>
-          <div class="fade-in perf-card tilt-card bg-surface-container-low rounded-[1.5rem] p-6" style="transition-delay:0.24s">
+          <div class="fade-in perf-card bg-surface-container-low rounded-[1.5rem] p-6" style="transition-delay:0.24s">
             <span class="material-symbols-outlined text-primary mb-3 block">celebration</span>
             <p style="font-family:'Playfair Display',serif" class="font-bold text-lg text-on-surface mb-1">Youth Festival</p>
             <p class="text-on-surface-variant text-sm">Rajasthan, 2020</p>

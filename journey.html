@@ -36,8 +36,8 @@
     }
   </script>
   <style>
-    body { font-family: 'Inter', sans-serif; background-color: #FDFAF6; color: #1C1007; -webkit-font-smoothing: antialiased; } h1, h2, h3 { line-height: 1.1; letter-spacing: -0.02em; } p { line-height: 1.6; }
-    .fade-in { opacity: 0; transform: translateY(24px); transition: opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1), transform 0.8s cubic-bezier(0.25, 1, 0.5, 1); }
+    body { font-family: 'Inter', sans-serif; background-color: #FDFAF6; color: #1C1007; }
+    .fade-in { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
     .fade-in.visible { opacity: 1; transform: translateY(0); }
     .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
     .timeline-line { position: absolute; left: 19px; top: 0; bottom: 0; width: 2px; background: linear-gradient(to bottom, #B8933F, #8B2635, #B8933F); }
@@ -79,7 +79,7 @@
   <section class="pt-40 pb-20 bg-surface">
     <div class="max-w-7xl mx-auto px-6">
       <div class="fade-in max-w-3xl">
-        <span class="text-gold uppercase tracking-[0.14em] text-[10px] font-semibold mb-4 block">Training & Milestones</span>
+        <span class="text-gold uppercase tracking-widest text-xs font-semibold mb-4 block">Training & Milestones</span>
         <h1 style="font-family:'Playfair Display',serif" class="font-black text-5xl lg:text-6xl text-on-surface leading-tight mb-6">
           The making of an<br/><span class="text-primary italic">artist.</span>
         </h1>
@@ -98,7 +98,7 @@
 
         <!-- 2011 -->
         <div class="fade-in flex gap-8 md:gap-12 mb-14">
-          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-gold flex items-center justify-center shadow-luxury z-10">
+          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-gold flex items-center justify-center shadow-lg z-10">
             <span class="material-symbols-outlined text-white text-sm">auto_stories</span>
           </div>
           <div class="bg-surface-container-low rounded-[1.5rem] p-8 flex-1 hover:shadow-md transition-shadow">
@@ -110,7 +110,7 @@
 
         <!-- 2015 -->
         <div class="fade-in flex gap-8 md:gap-12 mb-14" style="transition-delay:0.08s">
-          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-primary flex items-center justify-center shadow-luxury z-10">
+          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-primary flex items-center justify-center shadow-lg z-10">
             <span class="material-symbols-outlined text-white text-sm">account_balance</span>
           </div>
           <div class="bg-surface-container-low rounded-[1.5rem] p-8 flex-1 hover:shadow-md transition-shadow">
@@ -122,7 +122,7 @@
 
         <!-- 2017 -->
         <div class="fade-in flex gap-8 md:gap-12 mb-14" style="transition-delay:0.16s">
-          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-gold flex items-center justify-center shadow-luxury z-10">
+          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-gold flex items-center justify-center shadow-lg z-10">
             <span class="material-symbols-outlined text-white text-sm">trending_up</span>
           </div>
           <div class="bg-surface-container-low rounded-[1.5rem] p-8 flex-1 hover:shadow-md transition-shadow">
@@ -134,7 +134,7 @@
 
         <!-- NSD -->
         <div class="fade-in flex gap-8 md:gap-12 mb-14" style="transition-delay:0.22s">
-          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-[#1C1007] flex items-center justify-center shadow-luxury z-10">
+          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-[#1C1007] flex items-center justify-center shadow-lg z-10">
             <span class="material-symbols-outlined text-white text-sm">theater_comedy</span>
           </div>
           <div class="bg-surface-container-low rounded-[1.5rem] p-8 flex-1 hover:shadow-md transition-shadow">
@@ -146,7 +146,7 @@
 
         <!-- 2020 -->
         <div class="fade-in flex gap-8 md:gap-12 mb-14" style="transition-delay:0.28s">
-          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-primary flex items-center justify-center shadow-luxury z-10">
+          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-primary flex items-center justify-center shadow-lg z-10">
             <span class="material-symbols-outlined text-white text-sm">star</span>
           </div>
           <div class="bg-surface-container-low rounded-[1.5rem] p-8 flex-1 hover:shadow-md transition-shadow">
@@ -158,7 +158,7 @@
 
         <!-- Doordarshan -->
         <div class="fade-in flex gap-8 md:gap-12 mb-14" style="transition-delay:0.34s">
-          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-gold flex items-center justify-center shadow-luxury z-10">
+          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-gold flex items-center justify-center shadow-lg z-10">
             <span class="material-symbols-outlined text-white text-sm">tv</span>
           </div>
           <div class="bg-surface-container-low rounded-[1.5rem] p-8 flex-1 hover:shadow-md transition-shadow">
@@ -170,10 +170,10 @@
 
         <!-- 2024 GWR -->
         <div class="fade-in flex gap-8 md:gap-12 mb-14" style="transition-delay:0.4s">
-          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-primary flex items-center justify-center shadow-luxury z-10 ring-4 ring-primary/20">
+          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-primary flex items-center justify-center shadow-lg z-10 ring-4 ring-primary/20">
             <span class="material-symbols-outlined text-white text-sm">emoji_events</span>
           </div>
-          <div class="bg-[#1C1007] rounded-[1.5rem] p-8 flex-1 hover:shadow-luxury-hover transition-shadow">
+          <div class="bg-[#1C1007] rounded-[1.5rem] p-8 flex-1 hover:shadow-xl transition-shadow">
             <span class="text-gold text-xs font-semibold uppercase tracking-widest">2024 — World Record</span>
             <h3 style="font-family:'Playfair Display',serif" class="font-bold text-2xl text-white mt-2 mb-3">Guinness World Record — Khajuraho</h3>
             <p class="text-white/70 leading-relaxed text-sm">At Khajuraho — the ancient temple complex synonymous with India's classical arts heritage — Aditi participated in creating a <strong class="text-white">Guinness World Record</strong>, marking a defining moment in her career and in Indian classical dance.</p>
@@ -182,7 +182,7 @@
 
         <!-- Ongoing -->
         <div class="fade-in flex gap-8 md:gap-12" style="transition-delay:0.46s">
-          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-gold flex items-center justify-center shadow-luxury z-10">
+          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-gold flex items-center justify-center shadow-lg z-10">
             <span class="material-symbols-outlined text-white text-sm">music_note</span>
           </div>
           <div class="bg-surface-container-low rounded-[1.5rem] p-8 flex-1 hover:shadow-md transition-shadow">

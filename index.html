@@ -37,20 +37,14 @@
           borderRadius: {
             '2rem': '2rem',
             '2.5rem': '2.5rem',
-          },
-          boxShadow: {
-            'luxury': '0 20px 40px rgba(139,38,53,0.12)',
-            'luxury-hover': '0 30px 60px rgba(139,38,53,0.18)',
           }
         }
       }
     }
   </script>
   <style>
-    body { font-family: 'Inter', sans-serif; background-color: #FDFAF6; color: #1C1007; -webkit-font-smoothing: antialiased; }
-    h1, h2, h3 { line-height: 1.1; letter-spacing: -0.02em; }
-    p { line-height: 1.6; }
-    .fade-in { opacity: 0; transform: translateY(24px); transition: opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1), transform 0.8s cubic-bezier(0.25, 1, 0.5, 1); }
+    body { font-family: 'Inter', sans-serif; background-color: #FDFAF6; color: #1C1007; }
+    .fade-in { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
     .fade-in.visible { opacity: 1; transform: translateY(0); }
     .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
     #tw-cursor {
@@ -107,12 +101,13 @@
     </div>
   </nav>
 
+  <!-- HERO SECTION -->
   <section id="hero-section" class="min-h-screen pt-20 flex items-center relative overflow-hidden bg-surface">
-    <div class="max-w-7xl mx-auto px-6 py-24 lg:grid lg:grid-cols-12 gap-16 items-center w-full">
+    <div class="max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-16 items-center w-full">
       <!-- Left -->
-      <div class="fade-in lg:col-span-7">
-        <span class="text-gold uppercase tracking-[0.15em] text-xs font-semibold mb-6 block">Kathak Artist · Delhi</span>
-        <h1 style="font-family:'Playfair Display',serif" class="font-black text-6xl lg:text-7xl text-on-surface leading-[1.05] tracking-tight mb-8">
+      <div class="fade-in">
+        <span class="text-gold uppercase tracking-widest text-xs font-semibold mb-6 block">Kathak Artist · Delhi</span>
+        <h1 style="font-family:'Playfair Display',serif" class="font-black text-6xl lg:text-7xl text-on-surface leading-[1.05] mb-6">
           Where Rhythm<br/>Meets <span class="text-primary italic"><span id="typewriter"></span><span id="tw-cursor">&nbsp;</span></span>
         </h1>
         <p class="text-on-surface-variant text-lg leading-relaxed mb-10 max-w-lg">
@@ -130,9 +125,9 @@
           <img
             src="assets/images/portfolio/p11_img1.png"
             alt="Aditi Vasistha — Kathak Artist"
-            class="relative z-10 w-full max-w-sm rounded-[2rem] object-cover aspect-[3/4] shadow-luxury"
+            class="relative z-10 w-full max-w-sm rounded-[2rem] object-cover aspect-[3/4] shadow-2xl"
           />
-          <div class="absolute z-20 bottom-6 -left-8 bg-[#1C1007] text-white text-xs font-semibold px-4 py-2 rounded-xl shadow-luxury">
+          <div class="absolute z-20 bottom-6 -left-8 bg-[#1C1007] text-white text-xs font-semibold px-4 py-2 rounded-xl shadow-lg">
             DOORDARSHAN GRADED ARTIST
           </div>
         </div>
@@ -162,19 +157,19 @@
 
       <!-- Stat cards -->
       <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
-        <div class="fade-in bg-surface rounded-xl p-8 hover:shadow-luxury hover:bg-primary-fixed hover:-translate-y-1 transition-all duration-300 cursor-default">
+        <div class="fade-in bg-surface rounded-xl p-8 hover:shadow-lg hover:bg-primary-fixed hover:-translate-y-1 transition-all duration-300 cursor-default">
           <div style="font-family:'Playfair Display',serif" class="font-black text-4xl text-primary mb-2 counter" data-target="150" data-suffix="+">0</div>
           <div class="text-on-surface-variant text-sm">Performances</div>
         </div>
-        <div class="fade-in bg-surface rounded-xl p-8 hover:shadow-luxury hover:bg-primary-fixed hover:-translate-y-1 transition-all duration-300 cursor-default" style="transition-delay:0.05s">
+        <div class="fade-in bg-surface rounded-xl p-8 hover:shadow-lg hover:bg-primary-fixed hover:-translate-y-1 transition-all duration-300 cursor-default" style="transition-delay:0.05s">
           <div style="font-family:'Playfair Display',serif" class="font-black text-4xl text-primary mb-2 counter" data-target="40" data-suffix="+">0</div>
           <div class="text-on-surface-variant text-sm">Choreographies</div>
         </div>
-        <div class="fade-in bg-surface rounded-xl p-8 hover:shadow-luxury hover:bg-primary-fixed hover:-translate-y-1 transition-all duration-300 cursor-default" style="transition-delay:0.1s">
+        <div class="fade-in bg-surface rounded-xl p-8 hover:shadow-lg hover:bg-primary-fixed hover:-translate-y-1 transition-all duration-300 cursor-default" style="transition-delay:0.1s">
           <div style="font-family:'Playfair Display',serif" class="font-black text-4xl text-primary mb-2 counter" data-target="12" data-suffix="+">0</div>
           <div class="text-on-surface-variant text-sm">Years of Training</div>
         </div>
-        <div class="fade-in bg-surface rounded-xl p-8 hover:shadow-luxury hover:bg-primary-fixed hover:-translate-y-1 transition-all duration-300 cursor-default" style="transition-delay:0.15s">
+        <div class="fade-in bg-surface rounded-xl p-8 hover:shadow-lg hover:bg-primary-fixed hover:-translate-y-1 transition-all duration-300 cursor-default" style="transition-delay:0.15s">
           <div style="font-family:'Playfair Display',serif" class="font-black text-4xl text-primary mb-2">GWR</div>
           <div class="text-on-surface-variant text-sm">Guinness World Record</div>
         </div>
@@ -183,62 +178,49 @@
   </section>
 
   <!-- OFFERINGS SECTION -->
-  <section class="bg-surface py-32 overflow-hidden">
+  <section class="bg-surface py-32">
     <div class="max-w-7xl mx-auto px-6">
-      <div class="mb-24 fade-in max-w-3xl">
-        <span class="text-gold uppercase tracking-[0.15em] text-[10px] font-bold block mb-4">What I Offer</span>
-        <h2 style="font-family:'Playfair Display',serif" class="font-bold text-5xl lg:text-6xl text-on-surface leading-tight">
-          Three dimensions of <br/><span class="text-primary italic">classical artistry.</span>
+      <div class="mb-16 fade-in">
+        <span class="text-gold uppercase tracking-widest text-xs font-semibold block mb-4">What I Offer</span>
+        <h2 style="font-family:'Playfair Display',serif" class="font-bold text-4xl lg:text-5xl text-on-surface max-w-2xl leading-tight">
+          Three dimensions of classical artistry.
         </h2>
       </div>
 
-      <div class="grid lg:grid-cols-2 gap-12 lg:gap-24 relative">
-        <!-- Vertical decorative line (Human touch) -->
-        <div class="absolute left-1/2 top-0 bottom-0 w-px bg-gold/10 hidden lg:block"></div>
+      <div class="grid md:grid-cols-3 gap-6 mb-8">
+        <div class="fade-in tilt-card bg-surface-container-low rounded-[2rem] p-8 group hover:shadow-lg transition-all duration-300">
+          <div class="w-12 h-12 bg-surface-container rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary transition-colors duration-300">
 
-        <div class="space-y-12 lg:pt-12">
-          <!-- Card 1 -->
-          <div class="fade-in tilt-card bg-surface-container-low rounded-[2rem] p-10 group hover:shadow-luxury-hover transition-all duration-500 border border-gold/5">
-            <div class="w-14 h-14 bg-surface-container rounded-2xl flex items-center justify-center mb-8 group-hover:bg-primary transition-colors duration-500">
-              <span class="material-symbols-outlined text-primary group-hover:text-white transition-colors duration-500 text-3xl">theater_comedy</span>
-            </div>
-            <h3 style="font-family:'Playfair Display',serif" class="font-bold text-3xl text-on-surface mb-4">Performance</h3>
-            <p class="text-on-surface-variant text-base leading-relaxed">Solo, duet, and group Kathak performances for festivals, cultural events, and prestigious stages across India. Each performance is a unique journey through rhythm and expression.</p>
           </div>
-
-          <!-- Card 3 (moved here for staggered look) -->
-          <div class="fade-in tilt-card bg-surface-container-low rounded-[2rem] p-10 group hover:shadow-luxury-hover transition-all duration-500 border border-gold/5" style="transition-delay: 0.2s">
-            <div class="w-14 h-14 bg-surface-container rounded-2xl flex items-center justify-center mb-8 group-hover:bg-primary transition-colors duration-500">
-              <span class="material-symbols-outlined text-primary group-hover:text-white transition-colors duration-500 text-3xl">school</span>
-            </div>
-            <h3 style="font-family:'Playfair Display',serif" class="font-bold text-3xl text-on-surface mb-4">Teaching & Workshops</h3>
-            <p class="text-on-surface-variant text-base leading-relaxed">Sharing the heritage of Kathak through structured teaching and workshops. Grounded in the guru-shishya tradition, with a focus on technique, musicality, and abhinaya.</p>
-          </div>
+          <h3 style="font-family:'Playfair Display',serif" class="font-bold text-xl text-on-surface mb-3">Performance</h3>
+          <p class="text-on-surface-variant text-sm leading-relaxed">Solo, duet, and group Kathak performances for festivals, cultural events, and prestigious stages across India. Each performance is a unique journey through rhythm and expression.</p>
         </div>
-
-        <div class="space-y-12 lg:mt-32">
-          <!-- Card 2 -->
-          <div class="fade-in tilt-card bg-surface-container-low rounded-[2rem] p-10 group hover:shadow-luxury-hover transition-all duration-500 border border-gold/5" style="transition-delay: 0.1s">
-            <div class="w-14 h-14 bg-surface-container rounded-2xl flex items-center justify-center mb-8 group-hover:bg-primary transition-colors duration-500">
-              <span class="material-symbols-outlined text-primary group-hover:text-white transition-colors duration-500 text-3xl">edit_note</span>
-            </div>
-            <h3 style="font-family:'Playfair Display',serif" class="font-bold text-3xl text-on-surface mb-4">Choreography</h3>
-            <p class="text-on-surface-variant text-base leading-relaxed">Over 40 choreographed productions blending classical vocabulary with contemporary themes — from intimate recitals to large ensemble pieces, every composition tells a story.</p>
+        <div class="fade-in tilt-card bg-surface-container-low rounded-[2rem] p-8 group hover:shadow-lg transition-all duration-300" style="transition-delay:0.08s">
+          <div class="w-12 h-12 bg-surface-container rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary transition-colors duration-300">
+            <span class="material-symbols-outlined text-primary group-hover:text-white transition-colors duration-300">edit_note</span>
           </div>
-          
-          <!-- Book a performance CTA -->
-          <div class="fade-in bg-primary rounded-[2rem] p-10 text-white shadow-luxury relative overflow-hidden group" style="transition-delay: 0.3s">
-            <div class="relative z-10">
-              <h3 style="font-family:'Playfair Display',serif" class="font-semibold text-2xl mb-4 italic">Bring Kathak to your stage.</h3>
-              <p class="text-white/80 text-sm mb-8 leading-relaxed">Organising a cultural festival or a special event? Let's create something unforgettable.</p>
-              <a href="contact.html" class="inline-flex items-center gap-2 bg-gold text-white font-bold px-6 py-3 rounded-xl hover:bg-white hover:text-primary transition-all duration-300">
-                Book a Performance <span class="material-symbols-outlined text-sm">arrow_forward</span>
-              </a>
-            </div>
-            <!-- Decorative circle -->
-            <div class="absolute -right-20 -bottom-20 w-64 h-64 bg-white/5 rounded-full blur-3xl group-hover:bg-white/10 transition-colors duration-500"></div>
-          </div>
+          <h3 style="font-family:'Playfair Display',serif" class="font-bold text-xl text-on-surface mb-3">Choreography</h3>
+          <p class="text-on-surface-variant text-sm leading-relaxed">Over 40 choreographed productions blending classical vocabulary with contemporary themes — from intimate recitals to large ensemble pieces, every composition tells a story.</p>
         </div>
+        <div class="fade-in tilt-card bg-surface-container-low rounded-[2rem] p-8 group hover:shadow-lg transition-all duration-300" style="transition-delay:0.16s">
+          <div class="w-12 h-12 bg-surface-container rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary transition-colors duration-300">
+            <span class="material-symbols-outlined text-primary group-hover:text-white transition-colors duration-300">school</span>
+          </div>
+          <h3 style="font-family:'Playfair Display',serif" class="font-bold text-xl text-on-surface mb-3">Teaching & Workshops</h3>
+          <p class="text-on-surface-variant text-sm leading-relaxed">Sharing the heritage of Kathak through structured teaching and workshops. Grounded in the guru-shishya tradition, with a focus on technique, musicality, and abhinaya.</p>
+        </div>
+      </div>
+
+      <!-- Dark banner -->
+      <div class="fade-in bg-[#1C1007] text-white p-8 rounded-[2rem] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+        <div>
+          <div class="text-xs font-semibold uppercase tracking-widest text-[#F5E8D8]/60 mb-2">Trained Under</div>
+          <p style="font-family:'Playfair Display',serif" class="font-bold text-xl">Guru Rani Khanam · Guru Subhash Bhattacharya · Guru Malti Shyam</p>
+          <p class="text-white/50 text-sm mt-1">Kathak Kendra, National Institute of Kathak · National School of Drama, Delhi</p>
+        </div>
+        <a href="contact.html" class="flex items-center gap-2 text-sm font-semibold text-[#F5D5BB] hover:text-white transition-colors whitespace-nowrap">
+          Book a Performance <span class="material-symbols-outlined text-sm">arrow_forward</span>
+        </a>
       </div>
     </div>
   </section>
@@ -363,38 +345,18 @@
       }, { passive: true });
     })();
 
-    // 3D tilt with refined physics
+    // 3D tilt
     document.querySelectorAll('.tilt-card').forEach(card => {
-      card.style.position = 'relative';
-      const glare = document.createElement('div');
-      glare.style.position = 'absolute';
-      glare.style.top = '0'; glare.style.left = '0';
-      glare.style.width = '100%'; glare.style.height = '100%';
-      glare.style.background = 'radial-gradient(circle at 0% 0%, rgba(255,255,255,0.2) 0%, transparent 60%)';
-      glare.style.pointerEvents = 'none';
-      glare.style.borderRadius = 'inherit';
-      glare.style.opacity = '0'; glare.style.transition = 'opacity 0.4s ease';
-      glare.style.zIndex = '20';
-      card.appendChild(glare);
-
       card.addEventListener('mousemove', (e) => {
         const rect = card.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
-        const rotateX = ((y / rect.height) - 0.5) * -12;
-        const rotateY = ((x / rect.width) - 0.5) * 12;
-        
-        card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`;
-        glare.style.opacity = '1';
-        glare.style.background = `radial-gradient(circle at ${(x / rect.width) * 100}% ${(y / rect.height) * 100}%, rgba(255,255,255,0.25) 0%, transparent 50%)`;
+        const rotateX = (((e.clientY - rect.top) / rect.height) - 0.5) * -14;
+        const rotateY = (((e.clientX - rect.left) / rect.width) - 0.5) * 14;
+        card.style.transform = `perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`;
       });
-      
       card.addEventListener('mouseleave', () => {
-        card.style.transition = 'transform 0.5s cubic-bezier(0.25, 1, 0.5, 1)';
-        card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1)';
-        glare.style.opacity = '0';
+        card.style.transition = 'transform 0.4s ease';
+        card.style.transform = 'perspective(800px) rotateX(0deg) rotateY(0deg) scale(1)';
       });
-      
       card.addEventListener('mouseenter', () => { card.style.transition = 'transform 0.1s ease'; });
     });
   </script>
